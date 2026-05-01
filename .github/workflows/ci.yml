@@ -1,0 +1,15 @@
+﻿name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repository Status
+        run: echo "✅ react-router-melissaai-argenicerebrum - Repository cleaned and ready"
